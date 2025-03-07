@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+    <!-- Primary Meta Tags -->
+    <title>Pet Name Generator |Create Perfect Names for Your Pet</title>
+    <meta name="title" content="Pet Name Generator | Create Perfect Names for Your Pet">
+    <meta name="description" content="Create the perfect name for your pet with our AI-powered name generator. Get unique, meaningful names with beautiful explanations instantly.">
+    <meta name="keywords" content="pet name generator, dog names, cat names, pet naming, unique pet names, meaningful pet names, animal names">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://petnamegenius.com/">
+    <meta property="og:title" content="Pet Name Generator | Create Perfect Names for Your Pet">
+    <meta property="og:description" content="Create the perfect name for your pet with our AI-powered name generator. Get unique, meaningful names with beautiful explanations instantly.">
+    <meta property="og:image" content="https://petnamegenius.com/preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://petnamegenius.com/">
+    <meta property="twitter:title" content="Pet Name Generator | Create Perfect Names for Your Pet">
+    <meta property="twitter:description" content="Create the perfect name for your pet with our AI-powered name generator. Get unique, meaningful names with beautiful explanations instantly.">
+    <meta property="twitter:image" content="https://petnamegenius.com/preview.jpg">
+    
+    <!-- Apple Specific Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <h1><i class="fas fa-paw"></i> Pet Name Generator</h1>
+            <p>Create the perfect name for your furry friend</p>
+        </header>
+
+        <main>
+            <section class="input-section" role="form" aria-label="Pet name generator form">
+                <textarea 
+                    id="nameRequirements" 
+                    placeholder="Describe your pet's characteristics (e.g., 'A playful white female puppy who loves cuddles')"
+                    rows="4"
+                    aria-label="Pet characteristics input"
+                ></textarea>
+                
+                <button id="generateBtn" class="generate-button" aria-label="Generate pet names">
+                    <div class="button-spinner" aria-hidden="true"></div>
+                    <span>Generate Names</span>
+                </button>
+
+                <div id="thinkingIndicator" class="thinking-indicator" style="display: none;" aria-live="polite">
+                    <div class="thinking-dots" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <p>Creating perfect names for your pet...</p>
+                </div>
+            </section>
+
+            <section id="resultsContainer" class="results-section" style="display: none;" aria-live="polite">
+                <h2><i class="fas fa-heart"></i> Your Pet's Names <i class="fas fa-heart"></i></h2>
+                <div id="nameCards" class="name-cards"></div>
+            </section>
+
+            <div id="errorMessage" class="error-message" style="display: none;" role="alert"></div>
+        </main>
+
+        <footer>
+            <div class="paw-line" aria-hidden="true">
+                <i class="fas fa-paw"></i>
+                <i class="fas fa-paw"></i>
+                <i class="fas fa-paw"></i>
+                <i class="fas fa-paw"></i>
+                <i class="fas fa-paw"></i>
+            </div>
+            <div class="heart-line">
+                <i class="fas fa-heart" aria-hidden="true"></i>
+                <span>Made with love for your pets</span>
+                <i class="fas fa-heart" aria-hidden="true"></i>
+            </div>
+            <p class="copyright"> 2025 AI Pet Name Generator. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
